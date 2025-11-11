@@ -1,0 +1,224 @@
+ {
+  "layout": {
+    "navbar": {
+      "widgetId": "navbar_001",
+      "brand": {
+        "logo": "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760771608/Gemini_Generated_Image_r9slshr9slshr9sl_lmwpnx.png",
+        "name": "Sun Coach Bus Body Builders"
+      },
+      "navLinks": [
+        { "label": "Home", "path": "/" },
+        { "label": "About", "path": "/about" },
+        { "label": "Services", "path": "/services" },
+        { "label": "Products", "path": "/products" },
+        { "label": "Insights", "path": "/insights" },
+        { "label": "Contact", "path": "/contact" }
+      ],
+      "cta": [
+        {
+          "name": "Get Started",
+          "action": "/contact",
+          "color": "bg-blue-600 text-white"
+        },
+        {
+          "name": "Login",
+          "action": "/login",
+          "color": "bg-transparent text-blue-600 border border-blue-600"
+        }
+      ]
+    },
+    "footer": {
+      "widgetId": "footer_001",
+      "brand": {
+        "logo": "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760771608/Gemini_Generated_Image_r9slshr9slshr9sl_lmwpnx.png",
+        "name": "Sun Coach Bus Body Builders"
+      },
+      "description": "Sun Coach Bus Body Builders is a leading manufacturer of high-quality buses, dedicated to providing innovative and reliable transportation solutions.",
+      "quickLinks": [
+        { "label": "About Us", "path": "/about" },
+        { "label": "Services", "path": "/services" },
+        { "label": "Gallery", "path": "/gallery" },
+        { "label": "Contact", "path": "/contact" }
+      ],
+      "contact": {
+        "address": "Chennai, Tamil Nadu, India",
+        "email": "contact@suncoach.com",
+        "phone": "+91 98765 43210"
+      },
+      "socialLinks": [
+        { "platform": "Facebook", "url": "https://facebook.com/suncoach" },
+        { "platform": "LinkedIn", "url": "https://linkedin.com/company/suncoach" },
+        { "platform": "Instagram", "url": "https://instagram.com/suncoach" },
+        { "platform": "Twitter", "url": "https://twitter.com/suncoach" }
+      ],
+      "cta": [
+        {
+          "name": "Get a Quote",
+          "action": "/contact",
+          "color": "bg-blue-600 text-white"
+        }
+      ]
+    }
+  },
+
+  "homePage": {
+    "heroBanner": {
+      "widgetId": "hero_001",
+      "title": "Sun Coach Builders – Trusted Pioneer in Bus Manufacturing for 20+ Years.",
+      "subtitle1": "From Luxury Coaches to Commercial Fleets – Quality Buses Built to Last.",
+      "subtitle2": "Safe. Durable. Comfortable. Sun Coach Builders Delivers Excellence on Every Road.",
+      "bgImages": [
+       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760771608/Gemini_Generated_Image_68m55q68m55q68m5_1_x70g6p.png",
+        "/assets/images/hero-banner-2.jpg",
+        "/assets/images/hero-banner-3.jpg"
+      ],
+      "cta": [
+        {
+          "name": "Explore Services",
+          "action": "/services",
+          "color": "bg-blue-600 text-white"
+        },
+        {
+          "name": "Contact Us",
+          "action": "/contact",
+          "color": "bg-transparent text-blue-600 border border-blue-600"
+        }
+      ]
+    },
+
+    "ourInsights": {
+      "widgetId": "insights_001",
+      "title": "Our Insights",
+      "description": "Stay updated with the latest trends, case studies, and industry insights from our experts.",
+      "bgImages": [
+        "/assets/images/bg-insights-1.jpg",
+        "/assets/images/bg-insights-2.jpg"
+      ],
+      "articles": [
+        {
+          "title": "AI in Modern Business",
+          "excerpt": "Discover how Artificial Intelligence is reshaping industries and driving efficiency.",
+          "image": "/assets/images/insight-ai.jpg",
+          "link": "/insights/ai-in-business"
+        },
+        {
+          "title": "Cloud Solutions for Startups",
+          "excerpt": "Learn why cloud computing is essential for scalability and security in startups.",
+          "image": "/assets/images/insight-cloud.jpg",
+          "link": "/insights/cloud-solutions"
+        }
+      ]
+    },
+
+    "products": {
+      "widgetId": "products_001",
+      "title": "Our Products",
+      "description": "We build powerful digital tools to simplify your business operations.",
+      "bgImages": [
+        "/assets/images/bg-products-1.jpg",
+        "/assets/images/bg-products-2.jpg"
+      ],
+      "items": [
+        {
+          "name": "Infotez CRM",
+          "description": "A smart CRM platform to manage your customers and sales pipeline effectively.",
+          "image": "/assets/images/product-crm.jpg",
+          "link": "/products/crm"
+        },
+        {
+          "name": "Infotez ERP",
+          "description": "Comprehensive ERP software to streamline your company’s resources and operations.",
+          "image": "/assets/images/product-erp.jpg",
+          "link": "/products/erp"
+        }
+      ]
+    },
+
+    "services": {
+      "widgetId": "services_001",
+      "title": "Our Services",
+      "description": "We deliver custom software development, cloud integration, and digital transformation services.",
+      "bgImages": [
+        "/assets/images/bg-services-1.jpg",
+        "/assets/images/bg-services-2.jpg"
+      ],
+      "items": [
+        {
+          "name": "Web Development",
+          "description": "Building scalable and interactive web applications using modern frameworks.",
+          "icon": "Globe"
+        },
+        {
+          "name": "Mobile App Development",
+          "description": "Creating seamless mobile experiences across Android and iOS platforms.",
+          "icon": "Smartphone"
+        },
+        {
+          "name": "Cloud Solutions",
+          "description": "Offering scalable and secure cloud deployment and management.",
+          "icon": "Cloud"
+        }
+      ]
+    },
+
+    "ourClients": {
+      "widgetId": "clients_001",
+      "title": "Our Clients",
+      "description": "We are trusted by innovative businesses worldwide.",
+      "bgImages": [
+        "/assets/images/bg-clients-1.jpg"
+      ],
+      "logos": [
+        { "image": "/assets/images/client1.png", "alt": "Client 1" },
+        { "image": "/assets/images/client2.png", "alt": "Client 2" },
+        { "image": "/assets/images/client3.png", "alt": "Client 3" },
+        { "image": "/assets/images/client4.png", "alt": "Client 4" }
+      ]
+    }
+  },
+  "busImages": {
+    "moffusilBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058535/Gemini_Generated_Image_sn94h0sn94h0sn94_yco24c.png",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058614/Gemini_Generated_Image_7c76g17c76g17c76_qoszdi.png",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059134/IMG-20250730-WA0406_sl5lsv.jpg"
+    ],
+    "cityBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059133/IMG-20250730-WA0266_c032gw.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059790/DSC_4681_1_11zon_iphj7s.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760762560/IMG-20250730-WA0353_1_t2j3ja.jpg"
+    ],
+    "miniBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059126/IMG-20250512-WA0027_torda2.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059126/Gemini_Generated_Image_l23vipl23vipl23v_ndv1nw.png"
+    ],
+    "schoolBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760763017/IMG-20250602-WA0060_o3go77.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760763016/IMG-20250730-WA0050_lurlof.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760763016/IMG-20250602-WA0061_dob1p3.jpg"
+    ],
+    "collageBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760762990/IMG_20250719_115100_328_1_dze01s.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059137/IMG_20250719_115100_038_1_aqofkd.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760762989/IMG_20250718_120542_871_d6nwyv.jpg"
+    ],
+    "tourBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059133/IMG-20250730-WA0301_liovjz.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760764048/IMG-20250928-WA0018_yyu80x.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760765181/Gemini_Generated_Image_kd36bvkd36bvkd36_ogjaci.png"
+    ]
+  },
+
+  "clientImages" :[
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761142/images_23_tpmjsw.jpg",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761081/1760712310976_pkvdne.png",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761081/Gemini_Generated_Image_hu7mdghu7mdghu7m_cziy2r.png",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761080/Freudenberg-NOK-2017-Logo_xadax8.jpg",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761079/unnamed_wmuqh8.jpg",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058127/WhatsApp_Image_2025-09-25_at_7.46.54_PM_1_xmls9v.jpg",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058110/WhatsApp_Image_2025-09-25_at_7.46.54_PM_3_pzklpl.jpg",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058098/WhatsApp_Image_2025-09-25_at_7.46.54_PM_4_y2u4an.jpg",
+    "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058085/WhatsApp_Image_2025-09-25_at_7.46.54_PM_vrrdsd.jpg"
+  ]
+
+  
+}
