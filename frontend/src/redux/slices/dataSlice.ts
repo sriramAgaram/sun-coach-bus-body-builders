@@ -83,6 +83,72 @@ interface DataState {
   };
   busImages: Record<string, string[]>;
   clientImages: string[];
+  aboutPage: {
+    widgetId: string;
+    title: string;
+    whoWeAre: {
+      title: string;
+      companyName: string;
+      description: string;
+      details: string[];
+    };
+    whatWeDo: {
+      title: string;
+      description: string;
+      highlight: string;
+    };
+    vision: {
+      title: string;
+      description: string;
+    };
+    mission: {
+      title: string;
+      description: string;
+    };
+    whyChooseUs: {
+      title: string;
+      description: string;
+    };
+    whyCustomersTrustUs: {
+      title: string;
+      promise: string;
+      points: Array<{
+        icon: string;
+        title: string;
+        description: string;
+      }>;
+    };
+    clientInsights: {
+      title: string;
+      items: Array<{
+        label: string;
+        value: string;
+      }>;
+    };
+    certificates: {
+      title: string;
+      description: string;
+      items: Array<{
+        name: string;
+        image: string;
+        alt: string;
+      }>;
+    };
+  };
+  productsPage: {
+    widgetId: string;
+    title: string;
+    description: string;
+    products: Array<{
+      id: string;
+      name: string;
+      icon: string;
+      description: string;
+      keyFeatures: string[];
+      additionalInfo: string;
+      imageType: string;
+    }>;
+  };
 }
 
 const initialState: DataState = data as unknown as DataState;

@@ -29,7 +29,7 @@ const Layout = () => {
   return (
     <>
       {renderNav()}
-      <main>
+      <main className="relative">
         <Outlet />
       </main>
       {renderFooter()}

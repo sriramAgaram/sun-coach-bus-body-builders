@@ -218,7 +218,249 @@
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058110/WhatsApp_Image_2025-09-25_at_7.46.54_PM_3_pzklpl.jpg",
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058098/WhatsApp_Image_2025-09-25_at_7.46.54_PM_4_y2u4an.jpg",
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058085/WhatsApp_Image_2025-09-25_at_7.46.54_PM_vrrdsd.jpg"
-  ]
+  ],
 
-  
+  "aboutPage": {
+    "widgetId": "about_001",
+    "title": "About Us – Sun Coach Bus Body Building, Karur",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "companyName": "Sun Coach Builders",
+      "description": "Sun Coach Builders, an ISO 9001 certified company based in Karur, Tamil Nadu, is a trusted and leading name in bus body manufacturing with a legacy of over two decades. Our journey began with a vision to redefine bus body building in India by blending engineering precision, craftsmanship, and modern design excellence.",
+      "details": [
+        "Driven by a team of skilled and experienced professionals, we build buses ranging from commercial fleet vehicles to luxury coaches, delivering exceptional quality using state-of-the-art technology and advanced manufacturing infrastructure.",
+        "Our unwavering focus on safety, durability, and innovation has earned us the trust of clients across South India and the Andaman Islands.",
+        "With a strong quality process, dedicated workforce, and modern production facilities, Sun Coach Builders continues to serve a diverse range of sectors — tourism, transport, education, and corporate mobility — setting new standards in comfort, performance, and reliability."
+      ]
+    },
+    "whatWeDo": {
+      "title": "🏗️ What We Do",
+      "description": "We specialize in designing and manufacturing custom-built buses to meet the unique needs of every client. Whether it's luxury coaches, tourist buses, mofussil buses, city buses, staff buses, college buses, school buses, mini buses, or special-purpose vehicles, our team ensures top-notch craftsmanship and unmatched quality in every build.",
+      "highlight": "Every bus we build reflects our 20+ years of experience, modern design standards, and strong commitment to comfort, safety, and durability."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be India's most trusted bus body building company, delivering innovative, safe, and eco-friendly buses that prioritize passenger comfort, reliability, and performance. With a commitment to state-of-the-art technology, superior materials, and continuous innovation, we aim to set the benchmark in bus manufacturing."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to design and create world-class buses that are not only visually appealing but also set the benchmark in safety, reliability, and passenger comfort. At Sun Coach, we combine cutting-edge technology, superior materials, and skilled craftsmanship to deliver buses that are durable, efficient, and cost-effective. Through continuous innovation, quality improvement, and attention to detail, we ensure that every bus we build exceeds customer expectations. We are committed to integrity, excellence, and sustainability, building buses that serve the future while upholding the highest standards of safety and performance."
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Sun Coach Builders?",
+      "description": "Over 20 years of expertise in bus body manufacturing, delivering high-quality, safe, and durable buses across South India and the Andaman Islands. Trusted by tour operators, educational institutions, corporate fleets, and transport services, we combine craftsmanship, modern design, and innovation to meet every client's unique needs."
+    },
+    "whyCustomersTrustUs": {
+      "title": "Why Our Customers Trust Us",
+      "promise": "At Sun Coach, our promise is simple: we don't just build buses, we engineer them to deliver unmatched performance, safety, and value.",
+      "points": [
+        {
+          "icon": "✅",
+          "title": "Proven Experience",
+          "description": "Over two decades of excellence in bus body building."
+        },
+        {
+          "icon": "✅",
+          "title": "Certified Quality",
+          "description": "ISO 9001 certified, CIRT accredited, and fully compliant with AIS 052 safety norms."
+        },
+        {
+          "icon": "✅",
+          "title": "Skilled Workforce",
+          "description": "Supported by a dedicated team of experienced professionals."
+        },
+        {
+          "icon": "✅",
+          "title": "High Production Capacity",
+          "description": "Facilities and expertise to manufacture 25–30 buses per month."
+        },
+        {
+          "icon": "✅",
+          "title": "Modern Infrastructure",
+          "description": "Large, well-equipped manufacturing facility located in Karur."
+        },
+        {
+          "icon": "✅",
+          "title": "Wide Reach",
+          "description": "Delivering buses across Tamil Nadu, other states of India, and the Andaman Islands."
+        },
+        {
+          "icon": "✅",
+          "title": "Customer Satisfaction",
+          "description": "Trusted for durability, comfort, safety, and high-quality craftsmanship."
+        }
+      ]
+    },
+    "clientInsights": {
+      "title": "Client Insights",
+      "items": [
+        {
+          "label": "Factory Area",
+          "value": "Large, well-equipped manufacturing facility"
+        },
+        {
+          "label": "Workforce",
+          "value": "Dedicated team of experienced professionals"
+        },
+        {
+          "label": "Technology Used",
+          "value": "State-of-the-art technology and advanced manufacturing infrastructure"
+        },
+        {
+          "label": "Production Capacity",
+          "value": "25–30 buses per month"
+        }
+      ]
+    },
+    "certificates": {
+      "title": "Certificates",
+      "description": "Our certifications and accreditations demonstrate our commitment to quality and safety standards.",
+      "items": [
+        {
+          "name": "ISO 9001",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA0yxTjC7v14BUWP4dRem5PnxoMIRcwxbDnx3TJOsUg7tzUTZSOdfif5x0n41yfcaHOxk9KxjwROz3j2M5bCUCGBXK572BS93bPxOesrLXVFkdmVxW3Y8ssiFUwXOmTm7Z0xBBtMEierk57kpkaNvhjPltz4Iyg4JWeALaYpe8V7pECeEJ7uFU9399cRRnEI6WMaUkDdvysbO5bNpfIFikovkmqOpKv-L4i1drnBWQ-3WJvt1PgdQClfR4uZUrxwl4qM37yDnaeYUhM",
+          "alt": "ISO 9001 Certification"
+        },
+        {
+          "name": "CIRT Accredited",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDisbwhKQweXORH5T4EavsWhZlmBMB7HkEFajqPxRdYdSsjtDJNxLkS4Q1feNGlaaprgiuyLndTWbb5mCLL8n9WbMnei4bRAF9IOcym2mwoTTJ5M3Qcw043YQ2nrArkMesrVMjTziXpUMHN2P0RdO9d9hSjDmS2_Szx7EtGyhNSEV93FigGmvjEB5AYZ56nXCwJqYYTWFgsq6etO1uNmakwCdSN0TZIkVjvIfzbUKhX5tsbhjJFapnBx78X-1GiArA-HmHOqqvIyIDq",
+          "alt": "CIRT Accreditation"
+        },
+        {
+          "name": "AIS 052 Compliance",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBfK7ixIV7M6gREujjJQjWrKog6me6i08kM9hZdi9yfU1YrKSuDwOvt81BMFNSwvT29rvtSTRi8Z4O4VrFVu-hxdH-NijipMTIE6x68yRSGFnTfP4eismHop1y5DD8YhOafP5aDeLq1TEUZkYfCroVci25d6kLlqK1xw9wIZ-YO00IzqCffaiuFol6njbjQVD_mraZ2UFoGFkwWBzzvDf9d0rBDs4NQ71L8zdjI02fAY7IV_enLy0UX3rOjaPYfulWxQB7u0zegTC_",
+          "alt": "AIS 052 Safety Norms Compliance"
+        }
+      ]
+    }
+  },
+
+  "productsPage": {
+    "widgetId": "products_001",
+    "title": "Our Products",
+    "description": "Explore our diverse range of premium bus bodies designed for every transportation need",
+    "products": [
+      {
+        "id": "tourist-bus",
+        "name": "Tourist Bus",
+        "icon": "🚌",
+        "description": "At Sun Coach Builders, we take pride in designing and manufacturing premium tourist bus bodies that combine luxury, comfort, and long-lasting quality. Every bus is built with precision craftsmanship and elegant design, offering passengers a smooth and enjoyable travel experience. Whether for intercity travel or tourism, our buses deliver style, performance, and durability that exceed expectations.",
+        "keyFeatures": [
+          "Stylish and aerodynamic exterior design",
+          "Comfortable push-back or recliner seats",
+          "Spacious interiors with wide gangway",
+          "Ample luggage space for passengers",
+          "AC and Non-AC models available",
+          "LED lighting and attractive interiors",
+          "Durable body structure for long life",
+          "Custom branding and paint options"
+        ],
+        "additionalInfo": "Each bus is custom-built based on customer needs — from standard seating layouts to luxury executive interiors.",
+        "imageType": "tourBus"
+      },
+      {
+        "id": "mofussil-bus",
+        "name": "Mofussil Bus",
+        "icon": "🚍",
+        "description": "At Sun Coach Builders, we specialize in building mofussil bus bodies engineered for long-distance and intercity travel. Designed for strength and passenger comfort, our mofussil buses feature durable structures, spacious layouts, and modern styling. With our focus on reliability and performance, each bus is built to ensure safety, comfort, and efficiency on every route.",
+        "keyFeatures": [
+          "Robust chassis integration for long life and stability",
+          "Spacious interiors for driver and passengers",
+          "Comfortable seating layout for long distance routes",
+          "High luggage space for intercity travel needs",
+          "LED lighting and stylish body design",
+          "Corrosion-resistant materials for extended durability",
+          "Options for AC and Non-AC configurations"
+        ],
+        "additionalInfo": "We build each mofussil bus body as per the customer's requirement. From standard seating layouts to luxury coach interiors, our team customizes every detail.",
+        "imageType": "moffusilBus"
+      },
+      {
+        "id": "city-town-bus",
+        "name": "City / Town Bus",
+        "icon": "🚏",
+        "description": "At Sun Coach Builders, we manufacture city and town bus bodies that are built for daily urban transportation. Our buses are strong, practical, and passenger-friendly, ensuring smooth operation even in heavy traffic conditions. With durable construction, ergonomic design, and easy maintenance, our city buses are the ideal choice for public and private transport operators.",
+        "keyFeatures": [
+          "Strong body structure for city driving conditions",
+          "Wide entry and exit doors for easy passenger movement",
+          "Comfortable seating and standing space",
+          "Slip-resistant flooring for safety",
+          "LED destination boards and interior lights",
+          "Corrosion-resistant materials for long life",
+          "Options for AC / Non-AC models",
+          "Customizable layouts (driver door, passenger doors, seats)"
+        ],
+        "additionalInfo": "Each city or town bus is manufactured with attention to safety, comfort, and efficiency.",
+        "imageType": "cityBus"
+      },
+      {
+        "id": "staff-bus",
+        "name": "Staff Bus",
+        "icon": "👷",
+        "description": "At Sun Coach Builders, we design and produce staff bus bodies that provide safe, reliable, and comfortable travel for employees. Each bus is built with attention to detail, from seating comfort to ventilation and safety features. Whether for corporate, industrial, or institutional use, our staff buses ensure daily comfort and long-term dependability for every journey.",
+        "keyFeatures": [
+          "Strong and durable body structure",
+          "Comfortable seating layout for daily use",
+          "Wide doors and easy step entry for convenience",
+          "Good ventilation with sliding windows or AC option",
+          "LED lighting and elegant interiors",
+          "Custom seating capacity based on client needs"
+        ],
+        "additionalInfo": "Each bus is custom-built to meet specific capacity, comfort, and design requirements — from standard models to luxury AC staff coaches.",
+        "imageType": "cityBus"
+      },
+      {
+        "id": "college-bus",
+        "name": "College Bus",
+        "icon": "🎓",
+        "description": "At Sun Coach Builders, we take pride in manufacturing college bus bodies that guarantee safe, comfortable, and efficient transportation for students and faculty. Built with robust materials and modern designs, our buses meet all safety standards while offering a smooth and pleasant ride. We deliver the perfect balance of durability, comfort, and quality trusted by educational institutions.",
+        "keyFeatures": [
+          "Rugged body structure built for long life",
+          "Comfortable and spacious seating for students",
+          "Wide entry and exit doors with anti-slip steps",
+          "High visibility windows for safety and ventilation",
+          "LED interior lighting and destination display",
+          "Options for AC / Non-AC models",
+          "Attractive exterior design with college branding"
+        ],
+        "additionalInfo": "Our college buses are designed for daily and long-route student travel, ensuring safety, durability, and comfort.",
+        "imageType": "collageBus"
+      },
+      {
+        "id": "school-bus",
+        "name": "School Bus",
+        "icon": "🏫",
+        "description": "At Sun Coach Builders, we are committed to building safe and sturdy school bus bodies designed specifically for daily student transport. Our buses are built with high safety standards, bright visibility, and ergonomic seating to ensure comfort and security for every child. With our focus on quality and reliability, we help schools provide safe and worry-free transportation every day.",
+        "keyFeatures": [
+          "High-strength body structure built for student safety",
+          "Comfortable and ergonomic seating layout",
+          "Anti-slip flooring and sturdy handrails",
+          "Wide entry/exit doors with easy steps",
+          "Large windows for ventilation and visibility",
+          "Bright yellow paint for easy identification",
+          "Safety signage and reflective markings",
+          "Options for AC / Non-AC models"
+        ],
+        "additionalInfo": "Our school buses are designed to handle daily use, short routes, and frequent stops — perfect for schools, educational institutions, and private operators.",
+        "imageType": "schoolBus"
+      },
+      {
+        "id": "mini-bus",
+        "name": "Mini Bus",
+        "icon": "🚐",
+        "description": "At Sun Coach Builders, we design and manufacture mini bus bodies that combine style, comfort, and strength in a compact form. Our mini buses are built for both short-distance city routes and long-distance travel, offering the perfect balance of efficiency and comfort for passengers. Whether used for staff transport, school or college trips, tourism, or corporate travel, every mini bus we build ensures smooth performance, durability, and passenger satisfaction.",
+        "keyFeatures": [
+          "Strong and long-lasting body construction",
+          "Comfortable push-back or recliner seating",
+          "AC and Non-AC models available",
+          "Ample luggage space for long trips",
+          "Spacious and elegant interiors",
+          "Compact size for easy handling and parking",
+          "Customizable layouts and branding options"
+        ],
+        "additionalInfo": "With Sun Coach Builders, you get more than a vehicle — you get a reliable, comfortable, and stylish travel solution built to perform on any road.",
+        "imageType": "miniBus"
+      }
+    ]
+  }
 }
