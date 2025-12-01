@@ -9,7 +9,7 @@ const Home = () => {
   const heroData = useSelector((state: RootState) => state.data.homePage.heroBanner);
   const busImages = useSelector((state: RootState) => state.data.busImages);
   const clientImages = useSelector((state: RootState) => state.data.clientImages);
-  const servicesData = useSelector((state: RootState) => state.data.homePage.services);
+  // const servicesData = useSelector((state: RootState) => state.data.homePage.services);
 
   // Prepare client slides
   const clientSlides = useMemo(() =>
