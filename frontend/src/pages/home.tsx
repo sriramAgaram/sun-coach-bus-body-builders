@@ -17,15 +17,15 @@ const Home = () => {
     [clientImages]
   );
 
-  // Prepare service slides
-  const serviceSlides = useMemo(() => {
-    if (!servicesData?.items) return [];
-    return servicesData.items.map((service: any) => ({
-      title: service.name,
-      description: service.description,
-      icon: service.icon,
-    }));
-  }, [servicesData]);
+  // // Prepare service slides
+  // const serviceSlides = useMemo(() => {
+  //   if (!servicesData?.items) return [];
+  //   return servicesData.items.map((service: any) => ({
+  //     title: service.name,
+  //     description: service.description,
+  //     icon: service.icon,
+  //   }));
+  // }, [servicesData]);
 
   // Prepare product slides from bus types
   const productSlides = useMemo(() => {
