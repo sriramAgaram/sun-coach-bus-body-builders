@@ -1,7 +1,7 @@
 
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import type { RootState } from "../redux/store/store";
 
 const Footer = () => {
@@ -65,6 +65,14 @@ const Footer = () => {
                     {footerData.contact.phone}
                   </a>
                 </div>
+                {footerData.contact.whatsapp && (
+                  <div className="flex items-center space-x-3 text-sm text-gray-300">
+                    <FaWhatsapp className="text-green-500 flex-shrink-0" />
+                    <a href={`https://wa.me/${footerData.contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
+                      {footerData.contact.whatsapp}
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
 

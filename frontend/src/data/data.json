@@ -1,4 +1,4 @@
- {
+{
   "layout": {
     "navbar": {
       "widgetId": "navbar_001",
@@ -7,12 +7,30 @@
         "name": "Sun Coach Bus Body Builders"
       },
       "navLinks": [
-        { "label": "Home", "path": "/" },
-        { "label": "About", "path": "/about" },
-        { "label": "Services", "path": "/services" },
-        { "label": "Products", "path": "/products" },
-        { "label": "Insights", "path": "/insights" },
-        { "label": "Contact", "path": "/contact" }
+        {
+          "label": "Home",
+          "path": "/"
+        },
+        {
+          "label": "About",
+          "path": "/about"
+        },
+        {
+          "label": "Services",
+          "path": "/services"
+        },
+        {
+          "label": "Products",
+          "path": "/products"
+        },
+        {
+          "label": "Insights",
+          "path": "/insights"
+        },
+        {
+          "label": "Contact",
+          "path": "/contact"
+        }
       ],
       "cta": [
         {
@@ -35,21 +53,38 @@
       },
       "description": "Sun Coach Bus Body Builders is a leading manufacturer of high-quality buses, dedicated to providing innovative and reliable transportation solutions.",
       "quickLinks": [
-        { "label": "About Us", "path": "/about" },
-        { "label": "Services", "path": "/services" },
-        { "label": "Gallery", "path": "/gallery" },
-        { "label": "Contact", "path": "/contact" }
+        {
+          "label": "About Us",
+          "path": "/about"
+        },
+        {
+          "label": "Services",
+          "path": "/services"
+        },
+        {
+          "label": "Gallery",
+          "path": "/gallery"
+        },
+        {
+          "label": "Contact",
+          "path": "/contact"
+        }
       ],
       "contact": {
-        "address": "Chennai, Tamil Nadu, India",
-        "email": "contact@suncoach.com",
-        "phone": "+91 98765 43210"
+        "address": "Karur, Tamil Nadu, India",
+        "email": "suncoachkarur@gmail.com",
+        "phone": "9789779913",
+        "whatsapp": "9943143945"
       },
       "socialLinks": [
-        { "platform": "Facebook", "url": "https://facebook.com/suncoach" },
-        { "platform": "LinkedIn", "url": "https://linkedin.com/company/suncoach" },
-        { "platform": "Instagram", "url": "https://instagram.com/suncoach" },
-        { "platform": "Twitter", "url": "https://twitter.com/suncoach" }
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/suncoachbuilderskarur/"
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/suncoachkarur/"
+        }
       ],
       "cta": [
         {
@@ -60,7 +95,6 @@
       ]
     }
   },
-
   "homePage": {
     "heroBanner": {
       "widgetId": "hero_001",
@@ -68,7 +102,7 @@
       "subtitle1": "From Luxury Coaches to Commercial Fleets – Quality Buses Built to Last.",
       "subtitle2": "Safe. Durable. Comfortable. Sun Coach Builders Delivers Excellence on Every Road.",
       "bgImages": [
-       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760771608/Gemini_Generated_Image_68m55q68m55q68m5_1_x70g6p.png",
+        "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760771608/Gemini_Generated_Image_68m55q68m55q68m5_1_x70g6p.png",
         "/assets/images/hero-banner-2.jpg",
         "/assets/images/hero-banner-3.jpg"
       ],
@@ -85,7 +119,6 @@
         }
       ]
     },
-
     "ourInsights": {
       "widgetId": "insights_001",
       "title": "Our Insights",
@@ -109,7 +142,6 @@
         }
       ]
     },
-
     "products": {
       "widgetId": "products_001",
       "title": "Our Products",
@@ -133,7 +165,6 @@
         }
       ]
     },
-
     "services": {
       "widgetId": "services_001",
       "title": "Our Services",
@@ -160,7 +191,6 @@
         }
       ]
     },
-
     "ourClients": {
       "widgetId": "clients_001",
       "title": "Our Clients",
@@ -169,10 +199,22 @@
         "/assets/images/bg-clients-1.jpg"
       ],
       "logos": [
-        { "image": "/assets/images/client1.png", "alt": "Client 1" },
-        { "image": "/assets/images/client2.png", "alt": "Client 2" },
-        { "image": "/assets/images/client3.png", "alt": "Client 3" },
-        { "image": "/assets/images/client4.png", "alt": "Client 4" }
+        {
+          "image": "/assets/images/client1.png",
+          "alt": "Client 1"
+        },
+        {
+          "image": "/assets/images/client2.png",
+          "alt": "Client 2"
+        },
+        {
+          "image": "/assets/images/client3.png",
+          "alt": "Client 3"
+        },
+        {
+          "image": "/assets/images/client4.png",
+          "alt": "Client 4"
+        }
       ]
     }
   },
@@ -207,8 +249,7 @@
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760765181/Gemini_Generated_Image_kd36bvkd36bvkd36_ogjaci.png"
     ]
   },
-
-  "clientImages" :[
+  "clientImages": [
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761142/images_23_tpmjsw.jpg",
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761081/1760712310976_pkvdne.png",
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760761081/Gemini_Generated_Image_hu7mdghu7mdghu7m_cziy2r.png",
@@ -219,7 +260,6 @@
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058098/WhatsApp_Image_2025-09-25_at_7.46.54_PM_4_y2u4an.jpg",
     "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058085/WhatsApp_Image_2025-09-25_at_7.46.54_PM_vrrdsd.jpg"
   ],
-
   "aboutPage": {
     "widgetId": "about_001",
     "title": "About Us – Sun Coach Bus Body Building, Karur",
@@ -334,7 +374,6 @@
       ]
     }
   },
-
   "productsPage": {
     "widgetId": "products_001",
     "title": "Our Products",
@@ -460,6 +499,36 @@
         ],
         "additionalInfo": "With Sun Coach Builders, you get more than a vehicle — you get a reliable, comfortable, and stylish travel solution built to perform on any road.",
         "imageType": "miniBus"
+      }
+    ]
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "description": "Comprehensive bus body building and maintenance solutions tailored to your needs.",
+    "services": [
+      {
+        "id": "bus-rebody",
+        "title": "Bus Rebody",
+        "description": "Give your old buses a brand-new life with our expert rebody solutions, ensuring safety, durability, and fresh appeal.",
+        "keyFeatures": [
+          "Complete Structural Renovation",
+          "Safety Compliance",
+          "Modern Design Updates",
+          "Interior upgradation"
+        ],
+        "icon": "🛠️"
+      },
+      {
+        "id": "bus-fc-work",
+        "title": "Bus FC (Fitness Certificate) Work",
+        "description": "Hassle-free FC renewal and compliance services to keep your buses road-ready and certified.",
+        "keyFeatures": [
+          "FC Renewal Services",
+          "Compliance Documentation",
+          "Road-Ready Certification",
+          "Hassle-Free Process"
+        ],
+        "icon": "📋"
       }
     ]
   }

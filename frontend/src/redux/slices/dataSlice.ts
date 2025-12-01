@@ -24,6 +24,7 @@ interface DataState {
         address: string;
         email: string;
         phone: string;
+        whatsapp?: string;
       };
       socialLinks: Array<{ platform: string; url: string }>;
       cta: Array<{ name: string; action: string; color: string }>;
@@ -149,6 +150,17 @@ interface DataState {
       imageType: string;
     }>;
   };
+  servicesPage: {
+    title: string;
+    description: string;
+    services: Array<{
+      id: string;
+      title: string;
+      description: string;
+      keyFeatures: string[];
+      icon: string;
+    }>;
+  };
 }
 
 const initialState: DataState = data as unknown as DataState;
@@ -162,4 +174,4 @@ const dataSlice = createSlice({
 });
 
 export default dataSlice.reducer;
-export const {} = dataSlice.actions;
+export const { } = dataSlice.actions;

@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import type { RootState } from "../redux/store/store";
 
 const Product = () => {
   const productsData = useSelector((state: RootState) => state.data.productsPage);
   const busImages = useSelector((state: RootState) => state.data.busImages);
-  const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   if (!productsData) {
     return <div className="min-h-screen bg-[#111a22] text-white flex items-center justify-center">Loading...</div>;
@@ -39,12 +39,12 @@ const Product = () => {
             {productsData.products.map((product) => {
               const images = getProductImages(product.imageType);
               const mainImage = images[0] || "";
-              
+
               return (
                 <div
                   key={product.id}
                   className="group bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700/50 hover:border-blue-600/50 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
-                  onClick={() => setSelectedProduct(selectedProduct === product.id ? null : product.id)}
+                  onClick={() => navigate(`/product/${product.id}`)}
                 >
                   {/* Product Image */}
                   <div className="relative aspect-video overflow-hidden bg-gray-900">
@@ -77,9 +77,9 @@ const Product = () => {
                       {product.description}
                     </p>
                     <div className="flex items-center text-blue-400 text-sm font-medium">
-                      {selectedProduct === product.id ? "Show Less" : "View Details"}
+                      View Details
                       <svg
-                        className={`w-4 h-4 ml-2 transition-transform duration-300 ${selectedProduct === product.id ? "rotate-180" : ""}`}
+                        className="w-4 h-4 ml-2 transition-transform duration-300"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -89,54 +89,7 @@ const Product = () => {
                     </div>
                   </div>
 
-                  {/* Expanded Details */}
-                  {selectedProduct === product.id && (
-                    <div className="px-6 pb-6 space-y-4 border-t border-gray-700/50 pt-6">
-                      {/* Key Features */}
-                      <div>
-                        <h4 className="text-white text-lg font-semibold mb-3 flex items-center gap-2">
-                          <span className="text-blue-400">✅</span>
-                          Key Features
-                        </h4>
-                        <ul className="space-y-2">
-                          {product.keyFeatures.map((feature, index) => (
-                            <li key={index} className="text-white/80 text-sm flex items-start gap-2">
-                              <span className="text-blue-400 mt-1">•</span>
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      {/* Additional Info */}
-                      {product.additionalInfo && (
-                        <div className="bg-blue-600/10 border-l-4 border-blue-600 p-4 rounded-r-lg">
-                          <p className="text-white/90 text-sm leading-relaxed">
-                            {product.additionalInfo}
-                          </p>
-                        </div>
-                      )}
-
-                      {/* Product Images Gallery */}
-                      {images.length > 1 && (
-                        <div>
-                          <h4 className="text-white text-lg font-semibold mb-3">Gallery</h4>
-                          <div className="grid grid-cols-2 gap-2">
-                            {images.slice(1, 5).map((image, index) => (
-                              <div key={index} className="aspect-video overflow-hidden rounded-lg">
-                                <img
-                                  src={image}
-                                  alt={`${product.name} ${index + 2}`}
-                                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                                  loading="lazy"
-                                />
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  )}
+                  {/* Expanded Details - Removed as we now navigate to detail page */}
                 </div>
               );
             })}
@@ -154,7 +107,8 @@ const Product = () => {
             return (
               <div
                 key={product.id}
-                className={`mb-24 last:mb-0 ${index > 0 ? "pt-12 border-t border-gray-700/50" : ""}`}
+                id={product.id}
+                className={`mb-24 last:mb-0 scroll-mt-24 ${index > 0 ? "pt-12 border-t border-gray-700/50" : ""}`}
               >
                 <div className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 lg:gap-12 items-center`}>
                   {/* Image Section */}
@@ -186,7 +140,7 @@ const Product = () => {
                       <h2 className="text-white text-3xl sm:text-4xl font-bold">{product.name}</h2>
                     </div>
                     <div className="w-24 h-1 bg-blue-600 mb-6"></div>
-                    
+
                     <p className="text-white/90 text-lg leading-relaxed mb-6">
                       {product.description}
                     </p>

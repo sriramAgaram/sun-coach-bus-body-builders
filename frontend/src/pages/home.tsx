@@ -12,8 +12,8 @@ const Home = () => {
   const servicesData = useSelector((state: RootState) => state.data.homePage.services);
 
   // Prepare client slides
-  const clientSlides = useMemo(() => 
-    clientImages.map(image => ({ image, alt: 'Client Logo' })), 
+  const clientSlides = useMemo(() =>
+    clientImages.map(image => ({ image, alt: 'Client Logo' })),
     [clientImages]
   );
 
@@ -31,31 +31,37 @@ const Home = () => {
   const productSlides = useMemo(() => {
     const products = [
       {
+        id: "tourist-bus",
         name: "Luxury Coaches",
         description: "Experience the ultimate in comfort and style with our range of luxury coaches.",
         image: busImages.tourBus?.[0] || busImages.moffusilBus?.[0] || "",
       },
       {
+        id: "school-bus",
         name: "School Buses",
         description: "Safe, reliable, and efficient transportation solutions for schools and educational institutions.",
         image: busImages.schoolBus?.[0] || "",
       },
       {
+        id: "city-town-bus",
         name: "City Transit Buses",
         description: "Modern and accessible buses designed for urban transit systems.",
         image: busImages.cityBus?.[0] || "",
       },
       {
+        id: "mofussil-bus",
         name: "Moffusil Buses",
         description: "Durable and comfortable buses perfect for long-distance travel.",
         image: busImages.moffusilBus?.[0] || "",
       },
       {
+        id: "mini-bus",
         name: "Mini Buses",
         description: "Compact and efficient buses ideal for smaller routes and communities.",
         image: busImages.miniBus?.[0] || "",
       },
       {
+        id: "college-bus",
         name: "College Buses",
         description: "Specialized buses designed for educational institutions with enhanced safety features.",
         image: busImages.collageBus?.[0] || "",
@@ -68,13 +74,13 @@ const Home = () => {
     <div className="relative w-full bg-[#111a22] overflow-x-hidden" style={{ fontFamily: 'Manrope, "Noto Sans", sans-serif' }}>
       {/* Hero Banner Section - Full Width */}
       <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroBanner})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
         </div>
-        
+
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:pt-24">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight mb-6">
@@ -120,45 +126,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Overview Carousel */}
-      {serviceSlides.length > 0 && (
-        <section className="py-16 md:py-24 bg-[#0d1419]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-                {servicesData?.title || "Our Services"}
-              </h2>
-              <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-              {servicesData?.description && (
-                <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                  {servicesData.description}
-                </p>
-              )}
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-              {serviceSlides.map((service: any, index: number) => (
-                <div
-                  key={index}
-                  className="bg-gray-800/50 rounded-xl p-6 hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 border border-gray-700/50"
-                >
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">🚌</span>
-                    </div>
-                    <h3 className="text-white text-xl font-semibold mb-2">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <p className="text-white/70 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Product Overview Carousel */}
       <section className="py-16 md:py-24 bg-[#111a22]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,16 +139,21 @@ const Home = () => {
             </p>
           </div>
           <div className="mt-12">
-            <EmblaCarousel 
-              slides={productSlides.map(p => ({ image: p.image, alt: p.name }))} 
+            <EmblaCarousel
+              slides={productSlides.map(p => ({
+                image: p.image,
+                alt: p.name,
+                link: `/product/${p.id}`
+              }))}
             />
           </div>
           {/* Product Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {productSlides.map((product, index) => (
-              <div
+              <Link
+                to={`/product/${product.id}`}
                 key={index}
-                className="group relative overflow-hidden rounded-xl bg-gray-800/50 border border-gray-700/50 hover:border-blue-600/50 transition-all duration-300"
+                className="group relative overflow-hidden rounded-xl bg-gray-800/50 border border-gray-700/50 hover:border-blue-600/50 transition-all duration-300 block"
               >
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -199,7 +171,7 @@ const Home = () => {
                     {product.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
