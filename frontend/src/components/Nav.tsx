@@ -39,16 +39,12 @@ const Nav = () => {
               to="/gallery"
               className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
             >
-              Clients
+              Gallery
             </Link>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
-              Get a Quote
-            </button>
-          </div>
+
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -86,13 +82,9 @@ const Nav = () => {
                 className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
-                Clients
+                Gallery
               </Link>
-              <div className="pt-4 border-t border-white/10">
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold text-sm transition-all duration-200 shadow-lg">
-                  Get a Quote
-                </button>
-              </div>
+
             </div>
           </div>
         )}

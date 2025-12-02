@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* Content Protection */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none; /* Optional: prevents interaction but might break clicks */
+}
+
+/* Re-enable pointer events for interactive images if needed, e.g., gallery thumbnails */
+.cursor-pointer img {
+  pointer-events: auto;
+}
