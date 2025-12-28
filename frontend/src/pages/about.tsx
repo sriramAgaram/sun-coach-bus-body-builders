@@ -227,16 +227,6 @@ const About = () => {
               </div>
             ))}
           </div>
-          
-          {/* View All Certificates Link */}
-          <div className="text-center mt-12">
-            <Link
-              to="/certificates"
-              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              View All Certificates
-            </Link>
-          </div>
         </div>
       </section>
     </div>

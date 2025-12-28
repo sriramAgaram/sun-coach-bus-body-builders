@@ -29,13 +29,13 @@
         },
         {
           "label": "Contact",
-          "path": "/contact"
+          "path": "https://wa.me/919943143945"
         }
       ],
       "cta": [
         {
           "name": "Get Started",
-          "action": "/contact",
+          "action": "https://wa.me/919943143945",
           "color": "bg-blue-600 text-white"
         },
         {
@@ -67,7 +67,7 @@
         },
         {
           "label": "Contact",
-          "path": "/contact"
+          "path": "https://wa.me/919943143945"
         }
       ],
       "contact": {
@@ -89,7 +89,7 @@
       "cta": [
         {
           "name": "Get a Quote",
-          "action": "/contact",
+          "action": "https://wa.me/919943143945",
           "color": "bg-blue-600 text-white"
         }
       ]
@@ -114,7 +114,7 @@
         },
         {
           "name": "Contact Us",
-          "action": "/contact",
+          "action": "https://wa.me/919943143945",
           "color": "bg-transparent text-blue-600 border border-blue-600"
         }
       ]

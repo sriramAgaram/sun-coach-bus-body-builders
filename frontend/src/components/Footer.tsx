@@ -82,12 +82,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerData.quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link
-                      to={link.path}
-                      className="text-gray-300 hover:text-white text-sm transition-colors duration-200 inline-block transform hover:translate-x-1"
-                    >
-                      {link.label}
-                    </Link>
+                      <Link
+                        to={link.path}
+                        className="text-gray-300 hover:text-white text-sm transition-colors duration-200 inline-block transform hover:translate-x-1"
+                      >
+                        {link.label}
+                      </Link>
                   </li>
                 ))}
               </ul>
@@ -113,13 +113,13 @@ const Footer = () => {
                 ))}
               </div>
               {footerData.cta.map((cta, index) => (
-                <Link
-                  key={index}
-                  to={cta.action}
-                  className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  {cta.name}
-                </Link>
+                  <Link
+                    key={index}
+                    to={cta.action}
+                    className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  >
+                    {cta.name}
+                  </Link>
               ))}
             </div>
           </div>
