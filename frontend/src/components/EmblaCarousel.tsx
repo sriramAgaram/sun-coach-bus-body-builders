@@ -72,13 +72,28 @@ export default function EmblaCarousel({ slides, enableAutoplay = false, imageHei
     autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    centerMode: false,
+    variableWidth: false,
+    adaptiveHeight: false,
     responsive: enableAutoplay ? [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          centerMode: false,
+          variableWidth: false,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
+          centerMode: false,
+          variableWidth: false,
         },
       },
       {
@@ -86,6 +101,19 @@ export default function EmblaCarousel({ slides, enableAutoplay = false, imageHei
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          centerMode: false,
+          variableWidth: false,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          centerMode: false,
+          variableWidth: false,
         },
       },
       {
@@ -93,6 +121,9 @@ export default function EmblaCarousel({ slides, enableAutoplay = false, imageHei
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          centerMode: false,
+          variableWidth: false,
         },
       },
     ] : [
@@ -117,11 +148,11 @@ export default function EmblaCarousel({ slides, enableAutoplay = false, imageHei
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider-container w-full overflow-hidden">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index}>
-            <div className="flex justify-center">
+          <div key={index} className="w-full">
+            <div className="flex justify-center w-full">
               {slide.link ? (
                 <Link to={slide.link} className="w-full block cursor-pointer">
                   <img

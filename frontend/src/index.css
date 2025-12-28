@@ -12,3 +12,33 @@ img {
 .cursor-pointer img {
   pointer-events: auto;
 }
+
+/* Carousel/Slider Styles */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container .slick-slide {
+  padding: 0 10px;
+}
+
+.slider-container .slick-slide > div {
+  width: 100% !important;
+}
+
+/* Ensure single slide on mobile */
+@media (max-width: 768px) {
+  .slider-container .slick-slide {
+    padding: 0 5px;
+  }
+  
+  .slider-container .slick-list {
+    margin: 0 -5px;
+  }
+  
+  .slider-container .slick-slide > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

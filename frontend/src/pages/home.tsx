@@ -32,38 +32,38 @@ const Home = () => {
     const products = [
       {
         id: "tourist-bus",
-        name: "Luxury Coaches",
-        description: "Experience the ultimate in comfort and style with our range of luxury coaches.",
+        name: "Tourist Bus",
+        description: "Luxury and comfort focused, AC/Non-AC options, aerodynamic design.",
         image: busImages.tourBus?.[0] || busImages.moffusilBus?.[0] || "",
       },
       {
         id: "school-bus",
-        name: "School Buses",
-        description: "Safe, reliable, and efficient transportation solutions for schools and educational institutions.",
+        name: "School Bus",
+        description: "High-strength structure, anti-slip flooring, and bright yellow identification for safety.",
         image: busImages.schoolBus?.[0] || "",
       },
       {
         id: "city-town-bus",
-        name: "City Transit Buses",
-        description: "Modern and accessible buses designed for urban transit systems.",
+        name: "City / Town Bus",
+        description: "Strong structure for urban transport, easy passenger movement with wide doors.",
         image: busImages.cityBus?.[0] || "",
       },
       {
         id: "mofussil-bus",
-        name: "Moffusil Buses",
-        description: "Durable and comfortable buses perfect for long-distance travel.",
+        name: "Mofussil Bus",
+        description: "Built for long-distance/intercity travel with robust chassis and high luggage space.",
         image: busImages.moffusilBus?.[0] || "",
       },
       {
         id: "mini-bus",
-        name: "Mini Buses",
-        description: "Compact and efficient buses ideal for smaller routes and communities.",
+        name: "Mini Bus",
+        description: "Compact and versatile for various uses including staff and tourism.",
         image: busImages.miniBus?.[0] || "",
       },
       {
         id: "college-bus",
-        name: "College Buses",
-        description: "Specialized buses designed for educational institutions with enhanced safety features.",
+        name: "College Bus",
+        description: "Rugged body and student safety focused manufacturing.",
         image: busImages.collageBus?.[0] || "",
       },
     ];
@@ -114,13 +114,16 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-              Our Insights
+              Who We Are
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           </div>
           <div className="max-w-4xl mx-auto">
             <p className="text-white/90 text-lg md:text-xl leading-relaxed text-center">
-              With over 30 years of experience, SRI MURUGA VILAS has established itself as a pioneer in the bus manufacturing industry. Our commitment to excellence, innovation, and customer satisfaction drives us to create vehicles that exceed expectations. We blend cutting-edge technology with meticulous craftsmanship to deliver buses that are not only durable and safe but also comfortable and stylish.
+              Sun Coach Builders, an ISO 9001 certified company in Karur, Tamil Nadu, is a trusted and leading name in bus body manufacturing with a legacy of over two decades. Our journey began with a vision to redefine bus body building in India by blending engineering precision, craftsmanship, and modern design excellence.
+            </p>
+            <p className="text-white/90 text-lg md:text-xl leading-relaxed text-center mt-4">
+              Detailed Product Information: Travels/Tourist Bus, Mofussil Bus, City / Town Bus, Staff Bus, College Bus, School Bus, and Mini Bus. We specialize in high-quality bus manufacturing for tourism, education, and corporate mobility.
             </p>
           </div>
         </div>
