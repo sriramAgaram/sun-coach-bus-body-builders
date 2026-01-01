@@ -229,6 +229,11 @@
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059790/DSC_4681_1_11zon_iphj7s.jpg",
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760762560/IMG-20250730-WA0353_1_t2j3ja.jpg"
     ],
+    "staffBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059133/IMG-20250730-WA0266_c032gw.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059790/DSC_4681_1_11zon_iphj7s.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760762560/IMG-20250730-WA0353_1_t2j3ja.jpg"
+    ],
     "miniBus": [
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059126/IMG-20250512-WA0027_torda2.jpg",
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059126/Gemini_Generated_Image_l23vipl23vipl23v_ndv1nw.png"
@@ -443,10 +448,12 @@
           "Wide doors and easy step entry for convenience",
           "Good ventilation with sliding windows or AC option",
           "LED lighting and elegant interiors",
-          "Custom seating capacity based on client needs"
+          "Custom seating capacity based on client needs",
+          "Anti-slip flooring for safety",
+          "Ergonomic handrails and grab bars"
         ],
         "additionalInfo": "Each bus is custom-built to meet specific capacity, comfort, and design requirements — from standard models to luxury AC staff coaches.",
-        "imageType": "cityBus"
+        "imageType": "staffBus"
       },
       {
         "id": "college-bus",

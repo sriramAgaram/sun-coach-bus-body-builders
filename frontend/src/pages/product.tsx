@@ -46,7 +46,7 @@ const Product = () => {
                   className="group bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700/50 hover:border-blue-600/50 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
                   onClick={() => navigate(`/product/${product.id}`)}
                 >
-                  {/* Product Image */}
+                  {/* Product Image with Title Overlay */}
                   <div className="relative aspect-video overflow-hidden bg-gray-900">
                     {mainImage ? (
                       <img
@@ -60,36 +60,27 @@ const Product = () => {
                         <span className="text-6xl">{product.icon}</span>
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <p className="text-white text-lg font-semibold">{product.name}</p>
+                    {/* Title Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                      <div className="absolute bottom-0 left-0 right-0 p-6">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-2xl">{product.icon}</span>
+                          <h3 className="text-white text-xl font-bold">{product.name}</h3>
+                        </div>
+                        <div className="flex items-center text-blue-400 text-sm font-medium">
+                          View Details
+                          <svg
+                            className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
-
-                  {/* Product Info */}
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-3xl">{product.icon}</span>
-                      <h3 className="text-white text-xl font-bold">{product.name}</h3>
-                    </div>
-                    <p className="text-white/70 text-sm leading-relaxed line-clamp-3 mb-4">
-                      {product.description}
-                    </p>
-                    <div className="flex items-center text-blue-400 text-sm font-medium">
-                      View Details
-                      <svg
-                        className="w-4 h-4 ml-2 transition-transform duration-300"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  {/* Expanded Details - Removed as we now navigate to detail page */}
                 </div>
               );
             })}

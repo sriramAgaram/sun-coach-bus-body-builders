@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import EmblaCarousel from "../components/EmblaCarousel";
@@ -9,23 +9,12 @@ const Home = () => {
   const heroData = useSelector((state: RootState) => state.data.homePage.heroBanner);
   const busImages = useSelector((state: RootState) => state.data.busImages);
   const clientImages = useSelector((state: RootState) => state.data.clientImages);
-  // const servicesData = useSelector((state: RootState) => state.data.homePage.services);
 
   // Prepare client slides
   const clientSlides = useMemo(() =>
     clientImages.map(image => ({ image, alt: 'Client Logo' })),
     [clientImages]
   );
-
-  // // Prepare service slides
-  // const serviceSlides = useMemo(() => {
-  //   if (!servicesData?.items) return [];
-  //   return servicesData.items.map((service: any) => ({
-  //     title: service.name,
-  //     description: service.description,
-  //     icon: service.icon,
-  //   }));
-  // }, [servicesData]);
 
   // Prepare product slides from bus types
   const productSlides = useMemo(() => {
@@ -65,6 +54,12 @@ const Home = () => {
         name: "College Bus",
         description: "Rugged body and student safety focused manufacturing.",
         image: busImages.collageBus?.[0] || "",
+      },
+      {
+        id: "staff-bus",
+        name: "Staff Bus",
+        description: "Safe, reliable, and comfortable travel for employees with corporate design.",
+        image: busImages.staffBus?.[0] || "",
       },
     ];
     return products.filter(p => p.image);
@@ -149,33 +144,6 @@ const Home = () => {
                 link: `/product/${p.id}`
               }))}
             />
-          </div>
-          {/* Product Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {productSlides.map((product, index) => (
-              <Link
-                to={`/product/${product.id}`}
-                key={index}
-                className="group relative overflow-hidden rounded-xl bg-gray-800/50 border border-gray-700/50 hover:border-blue-600/50 transition-all duration-300 block"
-              >
-                <div className="aspect-video overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-white text-xl font-semibold mb-2">
-                    {product.name}
-                  </h3>
-                  <p className="text-white/70 text-sm leading-relaxed">
-                    {product.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
