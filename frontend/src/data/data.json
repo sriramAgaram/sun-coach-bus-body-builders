@@ -103,8 +103,8 @@
       "subtitle2": "Safe. Durable. Comfortable. Sun Coach Builders Delivers Excellence on Every Road.",
       "bgImages": [
         "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760771608/Gemini_Generated_Image_68m55q68m55q68m5_1_x70g6p.png",
-        "/assets/images/hero-banner-2.jpg",
-        "/assets/images/hero-banner-3.jpg"
+        "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058789/Gemini_Generated_Image_1s8e6u1s8e6u1s8e_phf6cn.png",
+        "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759058891/moffusil_zak9hx.png"
       ],
       "cta": [
         {
@@ -247,6 +247,11 @@
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059133/IMG-20250730-WA0301_liovjz.jpg",
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760764048/IMG-20250928-WA0018_yyu80x.jpg",
       "https://res.cloudinary.com/dofzr1mdu/image/upload/v1760765181/Gemini_Generated_Image_kd36bvkd36bvkd36_ogjaci.png"
+    ],
+    "staffBus": [
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059126/IMG-20250730-WA0008_1_lsxvos.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1759059127/IMG-20250730-WA0031_vlzffr.jpg",
+      "https://res.cloudinary.com/dofzr1mdu/image/upload/v1766106671/STAFF_gxrgwf.jpg"
     ]
   },
   "clientImages": [
@@ -446,7 +451,7 @@
           "Custom seating capacity based on client needs"
         ],
         "additionalInfo": "Each bus is custom-built to meet specific capacity, comfort, and design requirements — from standard models to luxury AC staff coaches.",
-        "imageType": "cityBus"
+        "imageType": "staffBus"
       },
       {
         "id": "college-bus",

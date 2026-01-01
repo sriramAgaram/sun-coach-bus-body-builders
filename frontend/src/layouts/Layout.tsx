@@ -6,6 +6,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import QuoteModal from "../components/QuoteModal";
 import { useContentProtection } from "../hooks/useContentProtection";
+import DarkVeil from "../components/ui/darkveil";
 
 const Layout = () => {
   useContentProtection();
@@ -31,10 +32,16 @@ const Layout = () => {
     }
   };
 
+
+
   return (
     <>
+      <div className="fixed inset-0 z-0">
+        <DarkVeil />
+      </div>
+
       {renderNav()}
-      <main className="relative">
+      <main className="relative z-10 text-white">
         <Outlet />
       </main>
       {renderFooter()}
