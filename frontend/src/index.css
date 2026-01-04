@@ -6,9 +6,14 @@
 /* Content Protection */
 img {
   -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
   user-select: none;
   -webkit-user-select: none;
-  pointer-events: none; /* Optional: prevents interaction but might break clicks */
+  -webkit-touch-callout: none;
+  pointer-events: none; /* Prevents right-click on image directly, clicks pass through */
 }
 
 /* Re-enable pointer events for interactive images if needed, e.g., gallery thumbnails */

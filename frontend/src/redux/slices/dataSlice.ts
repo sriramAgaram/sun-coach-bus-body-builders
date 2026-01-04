@@ -135,6 +135,19 @@ interface DataState {
         alt: string;
       }>;
     };
+
+  };
+  contactPage: {
+    widgetId: string;
+    title: string;
+    description: string;
+    contactInfo: {
+      address: string;
+      email: string;
+      phone: string;
+      whatsapp?: string;
+    };
+    socialLinks: Array<{ platform: string; url: string; icon: string }>;
   };
   productsPage: {
     widgetId: string;

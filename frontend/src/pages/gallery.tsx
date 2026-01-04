@@ -17,9 +17,10 @@ const Gallery = () => {
     ...(busImages.schoolBus?.map(img => ({ src: img, category: "School Bus" })) || []),
     ...(busImages.collageBus?.map(img => ({ src: img, category: "College Bus" })) || []),
     ...(busImages.miniBus?.map(img => ({ src: img, category: "Mini Bus" })) || []),
+    ...(busImages.seatImages?.map(img => ({ src: img, category: "Seat Images" })) || []),
   ];
 
-  const categories = ["all", "Tourist Bus", "Mofussil Bus", "City Bus", "School Bus", "College Bus", "Mini Bus"];
+  const categories = ["all", "Tourist Bus", "Mofussil Bus", "City Bus", "School Bus", "College Bus", "Mini Bus", "Seat Images"];
 
   const filteredImages = activeTab === "all"
     ? allImages

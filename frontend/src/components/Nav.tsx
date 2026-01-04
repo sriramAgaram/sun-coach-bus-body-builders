@@ -41,6 +41,12 @@ const Nav = () => {
             >
               Gallery
             </Link>
+            <Link
+              to="/contact"
+              className="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+            >
+              Contact
+            </Link>
           </div>
 
           {/* CTA Button */}
@@ -83,6 +89,13 @@ const Nav = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Gallery
+              </Link>
+              <Link
+                to="/contact"
+                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
               </Link>
 
             </div>

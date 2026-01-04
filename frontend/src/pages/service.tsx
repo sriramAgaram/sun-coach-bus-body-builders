@@ -76,7 +76,7 @@ const Service = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-16 md:py-24 bg-[#0d1419]/80 backdrop-blur-md">
+        <section className="py-16 md:py-24 bg-transparent backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {servicesData.services.map((service: any) => (
@@ -173,7 +173,7 @@ const Service = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-linear-to-b from-[#0d1419]/90 to-[#111a22]/90 backdrop-blur-sm">
+        <section className="py-16 md:py-24 bg-transparent backdrop-blur-sm">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="bg-linear-to-br from-blue-600/10 via-blue-700/5 to-transparent rounded-2xl p-8 md:p-12 border border-blue-600/20 backdrop-blur-sm shadow-xl shadow-blue-900/10">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-md">

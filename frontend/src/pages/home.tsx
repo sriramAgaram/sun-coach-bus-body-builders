@@ -20,6 +20,7 @@ const Home = () => {
   }, [heroImages.length]);
   const heroData = useSelector((state: RootState) => state.data.homePage.heroBanner);
   const busImages = useSelector((state: RootState) => state.data.busImages);
+  const productsConfig = useSelector((state: RootState) => state.data.homePage.products);
   const clientImages = useSelector((state: RootState) => state.data.clientImages);
 
   const clientSlides = useMemo(() =>
@@ -29,52 +30,13 @@ const Home = () => {
 
 
   const productSlides = useMemo(() => {
-    const products = [
-      {
-        id: "tourist-bus",
-        name: "Tourist Bus",
-        description: "Luxury and comfort focused, AC/Non-AC options, aerodynamic design.",
-        image: busImages.tourBus?.[0] || busImages.moffusilBus?.[0] || "",
-      },
-      {
-        id: "school-bus",
-        name: "School Bus",
-        description: "High-strength structure, anti-slip flooring, and bright yellow identification for safety.",
-        image: busImages.schoolBus?.[0] || "",
-      },
-      {
-        id: "city-town-bus",
-        name: "City / Town Bus",
-        description: "Strong structure for urban transport, easy passenger movement with wide doors.",
-        image: busImages.cityBus?.[0] || "",
-      },
-      {
-        id: "mofussil-bus",
-        name: "Mofussil Bus",
-        description: "Built for long-distance/intercity travel with robust chassis and high luggage space.",
-        image: busImages.moffusilBus?.[0] || "",
-      },
-      {
-        id: "mini-bus",
-        name: "Mini Bus",
-        description: "Compact and versatile for various uses including staff and tourism.",
-        image: busImages.miniBus?.[0] || "",
-      },
-      {
-        id: "college-bus",
-        name: "College Bus",
-        description: "Rugged body and student safety focused manufacturing.",
-        image: busImages.collageBus?.[0] || "",
-      },
-      {
-        id: "staff-bus",
-        name: "Staff Bus",
-        description: "Built for staff transport with comfortable seating and easy access.",
-        image: busImages.staffBus?.[0] || "",
-      }
-    ];
-    return products.filter(p => p.image);
-  }, [busImages]);
+    return productsConfig.items.map((item: any) => ({
+      id: item.id,
+      name: item.name,
+      description: item.description,
+      image: (busImages as any)[item.imageType]?.[0] || "",
+    })).filter((p: any) => p.image);
+  }, [productsConfig, busImages]);
 
   return (
     <div className="relative w-full bg-transparent overflow-x-hidden" style={{ fontFamily: 'Manrope, "Noto Sans", sans-serif' }}>
