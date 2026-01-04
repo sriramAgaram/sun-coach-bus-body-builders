@@ -1,15 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import type { RootState } from "../redux/store/store";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   const navLinks = useSelector((state: RootState) => state.data.layout.navbar.navLinks);
   const brand = useSelector((state: RootState) => state.data.layout.navbar.brand);
 
+  useEffect(() => {
+    const controlNavbar = () => {
+      if (typeof window !== "undefined") {
+        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+          // Scrolling down
+          setShowNav(false);
+        } else {
+          // Scrolling up
+          setShowNav(true);
+        }
+        setLastScrollY(window.scrollY);
+      }
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md bg-opacity-90 transition-all duration-300">
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md bg-opacity-90 transition-transform duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Brand Logo and Name */}

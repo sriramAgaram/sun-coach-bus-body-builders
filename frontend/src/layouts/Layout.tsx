@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import QuoteModal from "../components/QuoteModal";
 import { useContentProtection } from "../hooks/useContentProtection";
 import DarkVeil from "../components/ui/darkveil";
+import BottomNav from "../components/BottomNav";
 
 const Layout = () => {
   useContentProtection();
@@ -41,15 +42,17 @@ const Layout = () => {
       </div>
 
       {renderNav()}
-      <main className="relative z-10 text-white">
+      <main className="relative z-10 text-white pb-20 md:pb-0">
         <Outlet />
       </main>
       {renderFooter()}
 
+      <BottomNav />
+
       {/* Floating Quote Button */}
       <button
         onClick={() => setIsQuoteOpen(true)}
-        className="fixed bottom-6 right-6 z-40 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group"
+        className="fixed bottom-28 md:bottom-6 right-6 z-40 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group"
         aria-label="Get a Quote"
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
